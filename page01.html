@@ -11,20 +11,25 @@
 
   gtag('config', 'UA-154893216-1');
 </script>
+<script>
+  fuction send(){
+  gtag("event", "點歌", {
+	"event_category": "點歌",
+	"event_label": "點歌",
+  	"value": 1
+  });
+	alert("事件送出");
+</script>
 </HEAD>
-
 <BODY >
   <h3>點歌單</h3>
-  
+  <button onclick="send();">點歌按這裡(有機會抽獎)</button>
   <div><H2>綠色</H2>
-      
-      
       <iframe width="560" height="315" src="https://www.youtube.com/embed/WY6nQK7zbsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/L9Jy9g2EcsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div>
       <iframe width="800" height="630" src="https://open.spotify.com/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
   </div>
     <h1>测试看看<h1>
     <div>
@@ -32,5 +37,3 @@
   </div>
 </BODY>
 </HTML>
-
-
