@@ -10,20 +10,23 @@
 
   gtag('config', 'UA-154893216-1');
 </script>
-
+<script>
+  fuction send(){
+  gtag("event", "點歌", {
+	"event_category": "點歌",
+	"event_label": "點歌",
+  "value": 1
+  });
+ alert("事件送出");
+</script>
 <TITLE>首頁</TITLE>
 </HEAD>
 
 <BODY >
   <h3>Website for GA</h3>
-  <div id="Header">Header 欄位</div>
-  <div id="Sidebar">Sidebar
+    <button onclick="send();">點歌按這裡(有機會抽獎)</button><a herf="/page01.html">點歌單</a>
     <a href="home.html">回主頁</a>
-    <a herf="/page01.html">點歌單</a>
-  </div>
-  <div id="Body">Body 欄位</div>
-  <div style='clear:both;'></div>
-  <div id="Footer">Footer 欄位</div>
+    
   
      
     
